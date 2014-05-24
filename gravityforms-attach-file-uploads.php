@@ -3,9 +3,9 @@
 
 Plugin Name: Gravity Forms: Attach File Uploads
 Plugin URI: http://github.com/zacwasielewski/gravity-forms-attach-file-uploads/
-Description: An addon for Gravity Forms to attach user-submitted File Upload data to notification emails
-Version: 0.1.0
-Author: Zac Wasielewski (@xac)
+Description: Add-on for Gravity Forms to attach user-submitted File Upload data to notification emails
+Version: 0.1.2
+Author: Zac Wasielewski
 Author URI: http://wasielewski.org
 
 */
@@ -32,7 +32,7 @@ function attach_fileuploads_notification_ui_settings($ui_settings, $notification
 				<?php _e("Attach File Upload data to notification email", "gravityforms"); ?>
 			</label>
 		</td>
-	</tr> <!-- / disable autoformat -->
+	</tr>
 	<?php $ui_settings['notification_attach_fileuploads'] = ob_get_contents(); ob_clean(); ?>
 	<?php
 	
