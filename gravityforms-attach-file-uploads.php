@@ -21,17 +21,17 @@ function attach_fileuploads_notification_ui_settings($ui_settings, $notification
 	ob_start();
 	?>
 	<tr valign="top">
-			<th scope="row">
-					<label for="gform_notification_attach_fileuploads">
-							<?php _e("Attachments", "gravityforms"); ?>
-					</label>
-			</th>
-			<td>
-					<input type="checkbox" name="gform_notification_attach_fileuploads" id="gform_notification_attach_fileuploads" value="1" <?php echo empty($notification["attachFileUploads"]) ? "" : "checked='checked'" ?>/>
-					<label for="gform_notification_attach_fileuploads" class="inline">
-							<?php _e("Attach File Upload data to notification email", "gravityforms"); ?>
-					</label>
-			</td>
+		<th scope="row">
+			<label for="gform_notification_attach_fileuploads">
+				<?php _e("Attachments", "gravityforms"); ?>
+			</label>
+		</th>
+		<td>
+			<input type="checkbox" name="gform_notification_attach_fileuploads" id="gform_notification_attach_fileuploads" value="1" <?php echo empty($notification["attachFileUploads"]) ? "" : "checked='checked'" ?>/>
+			<label for="gform_notification_attach_fileuploads" class="inline">
+				<?php _e("Attach File Upload data to notification email", "gravityforms"); ?>
+			</label>
+		</td>
 	</tr> <!-- / disable autoformat -->
 	<?php $ui_settings['notification_attach_fileuploads'] = ob_get_contents(); ob_clean(); ?>
 	<?php
