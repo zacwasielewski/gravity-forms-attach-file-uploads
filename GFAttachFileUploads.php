@@ -6,7 +6,7 @@ if ( class_exists("GFForms") ) {
 
 	class GFAttachFileUploads extends GFAddOn {
 
-		protected $_version = "0.2.0";
+		protected $_version = "0.2.1";
 		protected $_min_gravityforms_version = "1.7.9999";
 		protected $_slug = "gravity-forms-attach-file-uploads";
 		protected $_path = "zacwasielewski/gravity-forms-attach-file-uploads.php";
